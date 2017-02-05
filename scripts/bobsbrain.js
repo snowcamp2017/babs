@@ -9,7 +9,7 @@ module.exports =  (robot) =>  {
 
   robot.messageRoom('general', 'Hello :earth_africa:')
 
-  robot.hear(/bob yo/, (res) => {
+  robot.hear(/babs yo/, (res) => {
     res.send(`yo ${res.message.user.name}`);
   });
 
@@ -17,7 +17,7 @@ module.exports =  (robot) =>  {
     res.send(`😡 ${res.message.user.name}`);
   });
 
-  robot.hear(/bob help me with (.*)/i, (res) => {
+  robot.hear(/babs help me with (.*)/i, (res) => {
     res.send(`help yourself with ${res.match[1]} 😜`);
   });
 
